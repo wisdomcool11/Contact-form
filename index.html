@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- page styling -->
+   <link rel="stylesheet" href="style/style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <div class="container">
+    
+    <form class="form js-form">
+      <h1>
+        Contact Us
+      </h1>
+
+      <div class="input-container">
+
+        <!-- contains then first and last name -->
+        <div class="name-container">
+          <label for="Fname">First Name *</label>
+          <input type="text"  name="Fname" class="names js-fname">
+          <span class="error js-error-msg"></span>
+        </div>
+
+        <div class="name-container">
+          <label for="Lname">Last Name *</label>
+          <input type="text" name="Lname" class="names js-Lname">
+          <span class="error js-error-msg"></span>
+        </div>
+
+      </div>
+
+      <!-- email -->
+      <div class="input-container email-container">
+        <label for="email">Email Address *</label>
+        <input type="text"  name="email" class="email js-email">
+
+        <span class="error js-error-msg"></span>
+        <span class="error  js-error-msg"></span>
+      </div>
+    
+      <!-- query type (radio) -->
+      <div class="input-container query">
+        <label for="query">Query Type *</label>
+
+        <div class="query-container">
+          
+          <span class="query-box-btn">
+              <input type="radio" name="query" class="js-query" id="general-query">
+              <label for="general-query">General Enquiry</label>
+          </span>
+
+          <span class="query-box-btn">
+            <input type="radio" name="query" class="js-query" id="support-query">
+            <label for="support-query">Support Request</label>
+          </span>
+
+        </div>
+
+        <div class="error js-query-error"></div>
+
+      </div>
+
+      <!-- textArea box -->
+      <div class=" input-container text-area">
+        <label for="text">Message *</label>
+        <textarea name="text" id="js-text"></textarea>
+        <span class="error js-error-msg"></span>
+      </div>
+    
+      <!-- consent box -->
+      <div class="consent">
+        <div>
+          <input type="checkbox" name="consent" id="js-consent">
+          <label for="consent">I consent to being contacted by the team</label>
+        </div>
+
+        <span class="error js-consent-error"></span>
+      </div>
+    
+      <!-- Submit -->
+      <div class="submit-btn">
+        <button id="js-submit" class="submit">
+          Submit
+        </button>
+        
+        <div class="js-success-msg">
+          <!-- <span>Message Sent!</span>
+          <p>
+              Thanks for completing the form. We'll be in touch soon!
+          </p> -->
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="js/practice.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
