@@ -106,7 +106,7 @@ function validateForm(){
             successMsg.innerText = '';
             successMsg.classList.remove('success')
 
-        },3000)
+        },1500)
        
         setTimeout(()=>{
             firstName.value = '';
@@ -114,7 +114,7 @@ function validateForm(){
             email.value = '';
             message.value = '';
 
-        },3000)
+        },2000)
 
     }else{
         successMsg.innerHTML= 'Please complete form';
