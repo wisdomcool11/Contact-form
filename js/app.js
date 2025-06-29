@@ -90,6 +90,7 @@ function validateForm(){
     
     if(allValid){
         successMsg.innerHTML = `
+        
             <span>
                 <img src="assets/images/icon-success-check.svg" alt="">
                 Message Sent!
@@ -105,7 +106,7 @@ function validateForm(){
             successMsg.innerText = '';
             successMsg.classList.remove('success')
 
-        },1500)
+        },3000)
        
         setTimeout(()=>{
             firstName.value = '';

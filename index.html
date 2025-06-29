@@ -21,7 +21,7 @@
 </head>
 <body>
 
-  <div class="container">
+  <div class="container" id="container">
     
     <form class="form js-form">
       <h1>
@@ -95,10 +95,10 @@
     
       <!-- Submit -->
       <div class="submit-btn">
-        <button id="js-submit" class="submit">
+        <button id="js-submit" class="submit" onclick="document.getElementById('container').scrollIntoView({ behavior: 'smooth' });">
           Submit
         </button>
-        
+           
         <div class="js-success-msg">
           <!-- <span>Message Sent!</span>
           <p>
